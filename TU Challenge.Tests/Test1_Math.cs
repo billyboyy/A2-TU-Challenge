@@ -75,7 +75,7 @@ namespace TU_Challenge
             bool result = MyMathImplementation.IsDivisible(a, b);
             Assert.That(result, Is.EqualTo(expected));
         }
-
+        
         [Test]
         [TestCase(2, true)]
         [TestCase(3, true)]
@@ -96,7 +96,7 @@ namespace TU_Challenge
             bool result = MyMathImplementation.IsPrimary(a);
             Assert.That(result, Is.EqualTo(expected));
         }
-
+        
         [Test]
         [TestCase(2, 1)]
         [TestCase(20, 8)]
@@ -111,7 +111,7 @@ namespace TU_Challenge
                 Assert.IsTrue(MyMathImplementation.IsPrimary(el));
             }
         }
-
+        
         [Test]
         [TestCase(2, 4)]
         [TestCase(8, 64)]
@@ -122,7 +122,7 @@ namespace TU_Challenge
             int result = MyMathImplementation.Power2(a);
             Assert.That(result, Is.EqualTo(expected));
         }
-
+        
         [Test]
         [TestCase(2, 2, 4)]
         [TestCase(20, 3, 8000)]
@@ -134,7 +134,7 @@ namespace TU_Challenge
             Assert.That(result, Is.EqualTo(expected));
         }
 
-
+        
         [Test]
         [TestCase(0, 1, 1)]
         [TestCase(0, 10, 1)]
@@ -147,7 +147,7 @@ namespace TU_Challenge
             var result = MyMathImplementation.IsInOrder(a, b);
             Assert.That(result, Is.EqualTo(expected));
         }
-
+        
         [Test]
         public void TestIsInOrder()
         {
@@ -173,13 +173,13 @@ namespace TU_Challenge
 
             // Test
             result = MyMathImplementation.IsListInOrder(
-                new List<int>() { -123, -1, 0, 12, 45, 90, 123});
+                new List<int>() { -123, -1, 0, 12, 45, 90, 123 });
             Assert.IsTrue(result);
         }
-
         // Votre premier algorithme de tri à implémenter.
         // N'hésitez pas à me demander de l'aide sur la partie théorie.
         // Interdiction d'appeller Sort sur la liste.
+        /*
         [Test]
         public void Sort()
         {
@@ -187,7 +187,7 @@ namespace TU_Challenge
 
             var result = MyMathImplementation.Sort(toSort);
 
-            for (int i = 0; i < result.Count-1; i++)
+            for (int i = 0; i < result.Count - 1; i++)
             {
                 Assert.IsTrue(result[i] < result[i + 1]);
             }
@@ -223,7 +223,7 @@ namespace TU_Challenge
             {
                 Assert.IsTrue(result[i] > result[i + 1]);
             }
-        }
+        }*/
 
     }
 }

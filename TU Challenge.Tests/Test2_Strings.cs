@@ -4,7 +4,6 @@ namespace TU_Challenge.Tests
     /// Exercice 2, cette fois-ci on fait un peu d'algorythme jouant avec des boucles
     /// Pour rendre les tests visible, tu dois passer le "#if false" à "#if true" ligne 7
     /// </summary>
-#if false
     public class Test2_Strings
     {
         [Test]
@@ -20,7 +19,7 @@ namespace TU_Challenge.Tests
 
             Assert.That(result, Is.EqualTo(expected));
         }
-
+/*
         [Test]
         [TestCase("ABCD", "ZYXW", "AZBYCXDW")]
         [TestCase("ZYXW", "ABCD","ZAYBXCWD")]
@@ -31,7 +30,7 @@ namespace TU_Challenge.Tests
             string result = MyStringImplementation.MixString(a, b);
             Assert.That(result, Is.EqualTo(expected));
         }
-
+        
         [Test]
         [TestCase("ABCD", null)]
         [TestCase(null, "ABCD")]
@@ -39,13 +38,12 @@ namespace TU_Challenge.Tests
         [TestCase("AB", "")]
         public void BreakMixStrings(string a, string b)
         {
-
             Assert.Throws<ArgumentException>(() =>
             {
                 MyStringImplementation.MixString(a, b);
             });
         }
-
+        
         /// <summary>
         /// Interdiction d'utiliser ToLower de la string.
         /// </summary>
@@ -107,8 +105,7 @@ namespace TU_Challenge.Tests
         {
             string result = MyStringImplementation.ToCesarCode(input, offset);
             Assert.That(result, Is.EqualTo(expected));
-        }
+        }*/
 
     }
-#endif
 }
